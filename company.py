@@ -20,6 +20,7 @@ def main():
     myCompany.addEmployee(employee1)
     myCompany.addEmployee(employee2)
     myCompany.displayEmployeeAndPayCheck()
-    
+    # for i in myCompany.employees:
+    #     print(i.fname)    
 main()
     
