@@ -25,7 +25,7 @@ def main():
     if (choice == 'F'):
         find_keyWord()
     elif (choice == 'A' ):
-        add_text();
+        add_text()
 
 main()
 
