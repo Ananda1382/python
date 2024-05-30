@@ -2,7 +2,7 @@ def find_Acronym():
     acronym = input('Enter the acronym you want to find\n')
     found = False
     try:
-        with open('C:\VirtualDSA\VDSA_Ref.txt') as file:
+        with open('C:\VirtualDSA\Test.txt') as file:
             for line in file:
                 if acronym in line:
                     print(line)
@@ -16,7 +16,7 @@ def find_Acronym():
 
 def add_Acronym():
     acronym = input('Enter the acronym you want to add\n')
-    with open('C:\VirtualDSA\VDSA_Ref.txt', 'a') as file:
+    with open('C:\VirtualDSA\Test.txt', 'a') as file:
         file.write('\n' + acronym + '\n')
 
 def main():

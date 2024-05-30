@@ -2,7 +2,7 @@ def find_keyWord():
     keyWord = 'ACHAND27'
     found = False
     try:
-        with open('C:\VirtualDSA\VDSA_Ref1.txt') as file:   
+        with open('C:\VirtualDSA\Test.txt') as file:   
             for line in file:
                 if keyWord in line:
                     print(line)
@@ -17,7 +17,7 @@ def find_keyWord():
     
 def add_text():
     additionKeyWord = "Hello"
-    with open('C:\VirtualDSA\VDSA_Ref.txt', 'a') as file:   
+    with open('C:\VirtualDSA\Test.txt', 'a') as file:   
         file.write('\n' + additionKeyWord + '\n')
     
 def main():
