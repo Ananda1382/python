@@ -10,6 +10,7 @@ def find_Acronym():
                     break
     except:
         print('File not found')
+        return
 
     if not found:
         print('Entered Acronym not found')
