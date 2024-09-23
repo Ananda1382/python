@@ -1,0 +1,22 @@
+def hourglass_sum(arr):
+    max_sum = -float('inf')  # Initialize to a very small number
+
+    for i in range(1, 5):  # Rows where the center of the hourglass can be
+        for j in range(1, 5):  # Columns where the center of the hourglass can be
+            # Calculate the sum of the current hourglass
+            top = arr[i - 1][j - 1] + arr[i - 1][j] + arr[i - 1][j + 1]
+            mid = arr[i][j]
+            bottom = arr[i + 1][j - 1] + arr[i + 1][j] + arr[i + 1][j + 1]
+            hourglass = top + mid + bottom
+
+            # Update max_sum if the current hourglass sum is greater
+            if hourglass > max_sum:
+                max_sum = hourglass
+
+    return max_sum
+
+# matrix = [[0 for _ in range(6)] for _ in range(6)]
+import numpy as np
+matrix = np.random.randint(10, size=(6, 6))
+print(matrix)
+print(hourglass_sum(matrix))
